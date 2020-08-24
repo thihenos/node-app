@@ -9,8 +9,14 @@ services:
   #  environment:
   #    MONGO_INITDB_ROOT_USERNAME: adm
   #    MONGO_INITDB_ROOT_PASSWORD: adm
+  zero:
+    build: ./0-MainStructure
+    volumes:
+      - ./0-MainStructure:/usr/app
+    ports: 
+      - 4100:4100
 
-  first:
+  one:
     build: ./1-FirstPages
     volumes:
       - ./1-FirstPages:/usr/app

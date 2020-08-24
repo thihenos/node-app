@@ -9,15 +9,9 @@
     "dev": "nodemon ./server/server.js"
   },
   "dependencies": {
-    "connect-flash": "^0.1.1",
-    "consolidate": "*",
-    "dustjs-helpers": "^1.7.4",
-    "dustjs-linkedin": "^2.7.5",
     "express": "^4.17.1",
     "nodemon": "^1.19.4",
-    "path": "*",
-    "connect-flash": "^0.1.1",
-    "jquery-mask-plugin": "^1.14.16"
+    "path": "*"
   },
   "author": "@thihenos",
   "license": "MIT"
