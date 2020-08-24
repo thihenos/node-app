@@ -23,8 +23,6 @@ const port = process.env.PORT || 4000
   app.use(express.static(path.resolve(__dirname , '../public/')))
   /* */
 
-  require('../views/routes-views')(app)
-
   // Subindo server em porta desejada
 	app.listen(port, () => {
 		console.log('----------- APP INICIADA -----------')
