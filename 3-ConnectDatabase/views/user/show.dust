@@ -1,0 +1,43 @@
+{>"layout/layout" /}
+
+{<body}
+
+	<div class="container">
+
+		<div class="row"><br>
+			{#message}
+		    <div id="divMensagemReturn" class="alert alert-dismissible alert-info">
+		        <button type="button" class="close" data-dismiss="alert">&times;</button>
+				<h4 id="divMensagemReturn"/>{message}
+		    </div>
+			{/message}
+		</div>
+
+		<form method="GET" action="/user/new" class="formNew">
+			<button class="btn btn-default newButton" type="submit">New</button>
+		</form>
+	
+		<br />
+
+		<div class="row">
+			{#user}
+			<div id="divMaterial" class="col-lg-4 col-xl-4 col-sm-12 col-md-4">
+				<div class="card">
+				  <div class="card-body">
+				    <h4 class="card-title">{username}</h4>
+				    <a href="#" class="card-link">
+				    	<button class="btn btn-default pull-right showButton"  type="input" data-id="{id}" data-name="{username}">Show</button>
+				    </a>
+				    <a href="#" class="card-link">
+				    	<button class="btn btn-danger pull-right deleteButton" type="input" data-id="{id}" data-name="{username}">Delete</button>
+				    </a>
+				  </div>
+				</div>
+			</div>
+			{/user}
+		</div>
+	</div>
+
+  	<script type="text/javascript" src="/js/user/user.js"></script>
+			
+{/body}

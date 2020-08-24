@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.js",
+    "dev": "nodemon ./server/index.js"
+  },
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "consolidate": "*",
+    "dustjs-helpers": "^1.7.4",
+    "dustjs-linkedin": "^2.7.5",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "path": "*",
+    "connect-flash": "^0.1.1",
+    "jquery-mask-plugin": "^1.14.16"
+  },
+  "author": "@thihenos",
+  "license": "MIT"
+}

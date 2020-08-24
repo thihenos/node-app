@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  #db:
+  #  image: mongo
+  #  volumes:
+  #    - ./database:/data/db 
+  #  environment:
+  #    MONGO_INITDB_ROOT_USERNAME: adm
+  #    MONGO_INITDB_ROOT_PASSWORD: adm
+
+  first:
+    build: ./1-FirstPages
+    volumes:
+      - ./1-FirstPages:/usr/app
+    ports: 
+      - 4000:4000
+  #  depends_on:
+  #    - db
+

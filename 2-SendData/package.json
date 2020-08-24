@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r dotenv/config ./server/index.js dotenv_config_path=./server/secure/prod.env",
+    "dev": "nodemon -r dotenv/config ./server/index.js dotenv_config_path=./server/secure/qa.env"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bristol" : "*",
+    "connect-flash": "^0.1.1",
+    "consolidate": "*",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^1.3.3",
+    "dotenv": "^8.2.0",
+    "dustjs-helpers": "^1.7.4",
+    "dustjs-linkedin": "^2.7.5",
+    "express": "^4.17.1",
+    "mongoose": "*",
+    "moment": "*",
+    "nodemon": "^1.19.4",
+    "palin" : "*",
+    "path": "*",
+    "connect-flash": "^0.1.1",
+    "express-bearer-token": "^2.4.0",
+    "express-jwt": "^5.3.1",
+    "express-validator": "^6.2.0",
+    "jquery-mask-plugin": "^1.14.16",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "author": "@thihenos",
+  "license": "MIT"
+}
