@@ -27,5 +27,5 @@ const port = process.env.PORT || 4000
 
   // Subindo server em porta desejada
   app.listen(port, () => {
-	console.log('----------- APP INICIADA -----------')
+	 console.log('----------- APP INICIADA -----------')
   })
