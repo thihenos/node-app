@@ -17,6 +17,7 @@ mongoose.connect('mongodb://heracles:heracles1@ds155714.mlab.com:55714/poseidon'
 
 db = mongoose;
 
+//Carregando todas as collections presentes na pasta models
 fs.readdirSync(__dirname).filter(function(file) {
     return (file.indexOf(".") !== 0) && (file !== "index.js");
 }).forEach(function(file) {

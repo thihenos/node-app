@@ -5,13 +5,7 @@ const getAll = async (collection, sort) => {
 }
 
 const getOneById = async (collection, id) => {
-  await db.model(`${collection}`).findById(id)
-  .then(document => {
-    if(!document.exists){
-    }
-    return document
-  }).catch(err => {
-  });
+  return await db.model(`${collection}`).findById(id)
 }
 
 const create = async (collection, data = {}) => {

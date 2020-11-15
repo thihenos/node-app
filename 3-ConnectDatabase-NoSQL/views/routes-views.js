@@ -13,9 +13,5 @@ module.exports = app => {
     });
   /* Fim rota para tela de lista */
 
-  //Se a pessoa tentar colocar qualquer endereço que não tenha na aplicação, será direcionada para welcome/index
-  app.route('/*').get((req, res) => {
-    res.status(401).send({ message: 'Pagina não existe!' }); 
-  });
 
 }

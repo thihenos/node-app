@@ -1,10 +1,9 @@
 const asyncHandler = require('../helpers/asyncHandler')
 const lib = require('../lib/material');
-const cons = require('consolidate');
 
 const getAllDocs = asyncHandler(async (req, res) => {
   try {
-    const data = await lib.getAllDocs(req.body)
+    const data = await lib.getAll(req.body)
     res.status(200).json(data)
   } catch (err) {
     throw err
@@ -35,8 +34,12 @@ const deleteDoc = asyncHandler(async (req, res) => {
 })
 
 const getOneDoc = asyncHandler(async (req, res) => {
-  const document = lib.getOneDoc(req.params.id)
-  res.status(200).json(document)
+  try {
+    const document = await lib.getOneDoc(req.params.id)
+    res.status(200).json(document)
+  } catch (err) {
+    throw err
+  }
 })
 
 module.exports = {
